@@ -1,0 +1,17 @@
+platform :ios, '8.0'
+install! 'cocoapods', :generate_multiple_pod_projects => true
+
+target '${POD_NAME}_Example' do
+	pod '${POD_NAME}', :path => '../'
+	
+	pod 'ZZFLEX', :git => 'git@github.com:tbl00c/ZZFLEX.git'
+	pod 'ZZScaffold', :git => 'git@github.com:tbl00c/ZZScaffold.git'
+	pod 'TLKit', :git => 'git@github.com:tbl00c/TLKit.git'
+	pod 'Masonry'
+
+  target '${POD_NAME}_Tests' do
+    inherit! :search_paths
+
+    ${INCLUDED_PODS}
+  end
+end
