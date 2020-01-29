@@ -32,8 +32,7 @@
         NSInteger sectionType = 0;
         self.addSection(sectionType).sectionInsets(UIEdgeInsetsMake(15, 0, 0, 0));
         self.addCell(@[CPDMenuItemCell class]).toSection(sectionType).withDataModel(@"请添加调试项").selectedAction(^ (NSString *title) {
-            TLAlertView *alertView = [[TLAlertView alloc] initWithTitle:title message:nil];
-            [alertView show];
+            [TLAlertView showWithTitle:title message:nil];
         });
     }
     
