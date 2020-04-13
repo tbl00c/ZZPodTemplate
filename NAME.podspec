@@ -33,6 +33,7 @@ TODO: 填写组件 ${POD_NAME} 的详细功能描述、使用方法、注意事�
     b.prefix_header_contents = <<-EOS
       #import "${POD_NAME}Macros.h"
       #import <ZZScaffold/ZZScaffold.h>
+      #import <TLKit/TLKit.h>
     EOS
   end
 
@@ -40,6 +41,7 @@ TODO: 填写组件 ${POD_NAME} 的详细功能描述、使用方法、注意事�
   s.subspec 'Module' do |m|
     m.source_files = '${POD_NAME}/Sources/Module/**/*'
     m.dependency 'ZZScaffold'
+    m.dependency 'TLKit'
     m.dependency '${POD_NAME}/API'
     m.dependency '${POD_NAME}/Business'
   end

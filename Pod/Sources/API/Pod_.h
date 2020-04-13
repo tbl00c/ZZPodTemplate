@@ -8,6 +8,4 @@
 #ifndef ${POD_NAME}_h
 #define ${POD_NAME}_h
 
-
-
 #endif /* ${POD_NAME}_h */

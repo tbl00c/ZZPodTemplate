@@ -128,7 +128,7 @@ module Pod
     def replace_variables_in_files
       file_names = ['POD_LICENSE', 'POD_README.md', 'NAME.podspec', '.travis.yml', podfile_path,
         './Pod/Sources/API/POD_.h', 
-        './Pod/Sources/Business/Base/POD_Macros.h', 
+        './Pod/Sources/API/POD_Macros.h', 
         './Pod/Sources/Module/POD_Module.h', 
         './Pod/Sources/Module/POD_Module.m', 
       ]
@@ -147,7 +147,7 @@ module Pod
     def rename_files_name
       file_names = [
         './Pod/Sources/API/POD_.h',
-        './Pod/Sources/Business/Base/POD_Macros.h', 
+        './Pod/Sources/API/POD_Macros.h', 
         './Pod/Sources/Module/POD_Module.h', 
         './Pod/Sources/Module/POD_Module.m', 
       ]
